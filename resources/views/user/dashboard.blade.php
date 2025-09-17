@@ -8,8 +8,8 @@
     </div>
 
     {{-- Hanya form di dalam grid --}}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white shadow-md rounded-lg p-6">
+    <div class="grid grid-cols-1 place-items-center">
+        <div class="bg-white shadow-md rounded-lg p-6 w-full md:w-1/2 lg:w-1/3">
             <h3 class="text-lg font-semibold mb-4">Tambah Task Baru</h3>
             <form action="{{ route('task.store') }}" method="POST">
                 @csrf
